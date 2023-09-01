@@ -16,13 +16,41 @@ body {
 }
 
 .modal {
+  display: flex;
+  gap:16px;
   background: white;
+  padding: 16px;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
 
+.right-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: larger;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.modal-content {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
 .icon {
+  flex-shrink: 0;
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
